@@ -1,27 +1,25 @@
-SDA: Project
+Project Description
 
-Project description
+Whenever we're performing analysis, we need to formulate hypotheses that we can then test. Sometimes we accept these hypotheses; other times, we reject them. To make the right decisions, a business must be able to understand whether or not it's making the right assumptions.
 
-You work as an analyst for the telecom operator Megaline. The company offers its clients two prepaid plans, Surf and Ultimate. The commercial department wants to know which of the plans brings in more revenue in order to adjust the advertising budget. 
+In this project, you'll compare the music preferences of the cities of Springfield and Shelbyville. You'll look at real Yandex.Music data to test the hypotheses below and compare user behavior for these two cities.
 
-You are going to carry out a preliminary analysis of the plans based on a relatively small client selection. You'll have the data on 500 Megaline clients: who the clients are, where they're from, which plan they use, and the number of calls they made and text messages they sent in 2018. Your job is to analyze clients' behavior and determine which prepaid plan brings in more revenue. 
+Hypotheses
 
-Description of the plans
+User activity differs depending on the day of the week and from city to city.
 
-Note: Megaline rounds seconds up to minutes, and megabytes to gigabytes. For calls, each individual call is rounded up: even if the call lasted just one second, it will be counted as one minute. For web traffic, individual web sessions are not rounded up. Instead, the total for the month is rounded up. If someone uses 1025 megabytes this month, they will be charged for 2 gigabytes.
+On Monday mornings, Springfield and Shelbyville residents listen to different genres. This is also true for Friday evenings.
 
-Surf
+Springfield and Shelbyville listeners have different preferences. In Springfield, they prefer pop, while Shelbyville has more rap fans.
+Description of the data
 
-Monthly charge: $20
-500 monthly minutes, 50 texts, and 15 GB of data
-After exceeding the package limits:
-1 minute: 3 cents
-1 text message: 3 cents
-1 GB of data: $10
-Ultimate
-Monthly charge: $70
-3000 monthly minutes, 1000 text messages, and 30 GB of data
-After exceeding the package limits:
-1 minute: 1 cent
-1 text message: 1 cent
-1 GB of data: $7
+The data is stored in the file /datasets/music_project_en.csv. Alternatively, you can download it here.
+
+Description of columns:
+'userID' — user identifier
+'Track' — track title
+'artist' — artist's name
+'genre'
+'City' — user's city
+'time' — the exact time the track was played
+'Day' — day of the week
